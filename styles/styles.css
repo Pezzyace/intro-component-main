@@ -49,7 +49,7 @@ form{
   background-color: white;
   border-radius: 5px;
 }
-form input{
+form div input{
   margin-bottom: 20px;
   padding: 12px;
   border-radius: 5px;
@@ -88,6 +88,22 @@ form span{
 footer{
   margin-top: 30px;
 }
+.error{
+  border: 2px solid red;
+  background-image: url(../images/icon-error.svg) no-repeat;
+  background-position: 95% 50%;
+}
+.error-text{
+  font-size: 10px;
+  font-style: italic;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  color: hsl(0, 100%, 74%);
+}
+.sucess{
+  border: 2px solid hsl(154, 59%, 51%);
+}
 
 @media (max-width: 375px){
   .container{
@@ -104,6 +120,9 @@ footer{
   }
   form{
     padding: 25px;
+  }
+  form div input{
+    width: 100%;
   }
   footer{
     margin-bottom: 10px;

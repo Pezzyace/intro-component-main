@@ -26,42 +26,44 @@
       <div class="advert">
         Try it free 7 days <span>then $20/mo. thereafter</span>
       </div>
-      <form>
+      <form action="#" id="form">
         <div>
-          <input type="text" name="FirstName" id="first-name" class="firstName" placeholder="First Name">
-          <span></span>
+          <div>
+            <input type="text" name="FirstName" id="first-name" class="firstName" placeholder="First Name">
+            <img src="/images/icon-error.svg" alt="" id="firstNameError">
+          </div>
+          <p id="firstNameErrorMessage">Please enter a valid first name.</p>
         </div>
-       
-
         <div>
-          <input type="text" name="Lastname" id="last-name" class="lastname" placeholder="Last Name">
-          <span></span>
+          <div>
+            <input type="text" name="Lastname" id="last-name" class="lastname" placeholder="Last Name">
+            <img src="/images/icon-error.svg" alt="" id="lastNameError">
+          </div>
+          <p id="lastNameErrorMessage">Please enter a valid last name.</p>
         </div>
-
-        
-
         <div>
-          <input type="email" name="email" id="email" class="email" placeholder="Email Address">
-          <span></span>
+          <div>
+            <input type="email" name="email" id="email" class="email" placeholder="Email Address">
+          <img src="/images/icon-error.svg" alt="" id="emailError">
+          </div>
+          <p id="emailErrorMessage">Please enter a valid email address.</p>
         </div>
-
-        
-
         <div>
-          <input type="password" name="password" id="password" class="password" placeholder="Password">
-          <span></span> 
+          <div>
+            <input type="password" name="password" id="password" class="password" placeholder="Password">
+            <img src="/images/icon-error.svg" alt="" id="passwordError">
+          </div>
+          <p id="passwordErrorMessage">Password must be at least 6 characters long.</p> 
         </div>
-        
-
-        <button class="claimBtn" id="claimBtn">Claim your free trial</button>
-        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span> </p>
+        <button class="claimBtn" id="claimBtn" type="submit">Claim your free trial</button>
+        <p class="ts">By clicking the button, you are agreeing to our <span>Terms and Services</span> </p>
       </form>
     </div>
   </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Pezzyace">peace Akaehomen</a>.
     </p>
   </footer>
   <script src="main.js"></script>
